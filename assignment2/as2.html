@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Leo Samargandi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>PlayStation Showcase</title>
+    <!-- Internal Styles -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 15px;
+            background-color: #e9e3e3;
+        }
+
+        header {
+            text-align: center;
+            background-color: #003087;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #003087;
+            font-style: italic;
+        }
+
+        p {
+            line-height: 1.5;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;
+            border: 1px solid #003087; /* Add border */
+            margin-top: 10px; /* Add margin to images */
+        }
+
+        /* Assignment 2 CSS styles */
+        a {
+            color: #003087;
+            text-decoration: none;
+            margin-right: 10px; 
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #003087;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #003087;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #003087;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #003087;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PlayStation Showcase</h1>
+        <h2>Your Gateway to Gaming Excellence</h2>
+    </header>
+
+    <!-- About PlayStation -->
+    <section id="playstation">
+        <h2>About PlayStation</h2>
+        <p>
+            PlayStation is a gaming brand known for its innovative consoles, exclusive games, and cutting-edge
+            technology. Explore the world of gaming with PlayStation's iconic lineup of consoles and experiences.
+        </p>
+        <img src="ps.jpg" alt="PlayStation Console">
+    </section>
+
+    <!-- Exclusive Games -->
+    <section id="exclusive-games">
+        <h2>Exclusive Games</h2>
+        <p>
+            Spider-Man 2 is one of the many exclusive games for the PS5.
+        </p>
+        <img src="ex.jpg" alt="PlayStation Exclusive Game">
+    </section>
+
+    <!-- Latest Console -->
+    <section id="latest-console">
+        <h2>Latest Console</h2>
+        <p>
+            The PS5 is currently the latest console from Playstation.
+        </p>
+        <img src="ps5.jpg" alt="Latest PlayStation Console">
+
+        <p>
+            Ordered list from latest to oldest PS consoles.
+        </p>
+        <ol>
+            <li>PS5</li>
+            <li>PS4</li>
+            <li>PS3</li>
+            <li>PS2</li>
+            <li>PS1</li>
+        </ol>
+
+    </section>
+
+    <!-- Gaming Community -->
+    <section id="community">
+        <h2>Gaming Community</h2>
+        <p>
+            Join a vibrant gaming community where players connect, share experiences, and celebrate the love of gaming.
+            PlayStation brings people together to create unforgettable gaming moments.
+        </p>
+
+        <ul>
+            <li>Connect with fellow gamers</li>
+            <li>Share your gaming experiences</li>
+            <li>Celebrate the world of gaming</li>
+        </ul>
+
+
+        <!-- Paths and FI -->
+        <br>
+        <a href="relative_path.html">Relative Path</a>
+        <a href="https://www.example.com">Absolute Path</a>
+        <a href="#fragment">Fragment Identifier</a>
+        <br>
+        <video width="320" height="240" controls>
+            <!-- I don't actually have an mp4 for this -->
+            <source src="doesn't_exist.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <!-- Table -->
+        <table border="1">
+            <caption>Testing Table</caption>
+            <thead>
+                <tr>
+                    <th>PS4</th>
+                    <th>PS5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Old</td>
+                    <td>New</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PlayStation Showcase</p>
+    </footer>
+
+</body>
+
+</html>
