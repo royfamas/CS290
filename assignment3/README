@@ -26,4 +26,6 @@ Drop down menu - 131
 Sitemap - 273
 Search boxes - Line 150
 
-I didn't use the vendor prefix because I'm not sure how to apply it here.
+I didn't use the vendor prefix because I'm not sure how to apply it here. Also, I know I should be using 
+a css file for the styles but I didn't here because I already numbered the lines for the requirements
+I will have a css file in the next assignments
