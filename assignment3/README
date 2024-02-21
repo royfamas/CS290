@@ -1,1 +1,29 @@
+I've reused my webpage from assignment 2 and added the specifics of this assignment to it, some things are out of the screen 
+and need more editing to look better but for now I was just concerned with adding the requirements.
 
+Requirements | Line in code
+
+Background color - Line 19
+Background image - Line 28
+Overflow - Line 34
+Box sizing - Line 20
+Vendor prefix properties - Not used
+Float - 190
+Inheritance - 43
+Clear - Line 95
+Collapsed containers (clearfix and overflow) - Line 34
+Position - Line 96
+z-index - Line 99
+Display - 138
+Fixed-width layout - 244
+Fluid layout - 49
+Responsive layout - Line 102
+@media query - Line 103
+Viewport - Line 8
+Navigation list horizontal - Line 110
+Breadcrumbs - Line 124
+Drop down menu - 131
+Sitemap - 273
+Search boxes - Line 150
+
+I didn't use the vendor prefix because I'm not sure how to apply it here.
