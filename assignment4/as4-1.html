@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #visualization {
+            margin: 20px auto;
+            width: 800px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        #controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data</h1>
+    <div id="visualization"></div>
+    <div id="controls">
+        <!-- Input -->
+        <button id="updateDataBtn">Update Data</button>
+    </div>
+
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+        // Variables of different data types
+        var data = [10, 20, 30, 40, 50]; 
+
+        // Create SVG element
+        var svg = d3.select("#visualization")
+                    .append("svg")
+                    .attr("width", 800)
+                    .attr("height", 400);
+
+        // Initial rendering
+        svg.selectAll("rect")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", (d, i) => i * 80)
+            .attr("y", (d) => 400 - d * 4)
+            .attr("width", 40)
+            .attr("height", (d) => d * 4)
+            .attr("fill", "steelblue");
+
+        // Event listener
+        document.getElementById("updateDataBtn").addEventListener("click", function() {
+            // Conditionals
+            var shouldRandomize = confirm("Do you want to randomize data?");
+            if (shouldRandomize) {
+                
+                data = data.map(() => Math.floor(Math.random() * 50) + 10);
+            } else {
+                
+                data = [10, 20, 30, 40, 50];
+            }
+
+            // Update bars
+            svg.selectAll("rect")
+                .data(data)
+                .transition()
+                .duration(1000)
+                .attr("y", (d) => 400 - d * 4)
+                .attr("height", (d) => d * 4)
+                .attr("fill", "steelblue");
+
+            // Scope
+            console.log("Updated data:", data);
+        });
+
+        // Objects
+        var additionalData = {
+            description: "Additional information about the visualization",
+            createdBy: "John Doe",
+            dateCreated: new Date().toDateString()
+        };
+
+        // Events
+        document.getElementById("updateDataBtn").addEventListener("click", function() {
+            console.log("Button clicked!");
+        });
+    </script>
+</body>
+</html>
