@@ -1,1 +1,5 @@
+Attached are the js file and an html file to interact with it.
 
+Note: Clicking on "Write to file" should add "Hello, world!" to the file, and then clicking
+on "Read file" should display that. However, the read file option is not working as intended
+and I'm not sure why.
