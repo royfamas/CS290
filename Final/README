@@ -1,1 +1,48 @@
+1- Website Problems: 
 
+- The Google Map is not working for some reason, yesterday it would show up at least but after interacting with it it would break but today it wouldn't show up at all.
+- Getting Request Denied after inputting a destination which I think might have something to do with broken Google Map API.
+
+2- Sites Reviews:
+
+A) Google: Easy to read and navigate, visually appealing.
+https://www.google.com/
+I have no problems nor improvements for this website, I think it's still the best looking one.
+
+B) Twitch: Neatly organized and easy to access in subsections. However, I don't like the fact that streams play in the background without clicking on them.
+https://www.twitch.tv/
+My issue with Twitch was the streams or recordings playing automatically whenever you click on a channel, the simple solution to this is to remove the code that displays them when clicking on channels
+and let the users decide if they want to play a snippet of that channel or not.
+
+C) OSU: Visually unappealing and also not simple to navigate.
+https://oregonstate.edu/
+I hate the OSU website with a passion that the only way they could improve it is to completely overhaul how it's displayed, they bombard you with texts and clickboxes that they think you might be interested in
+but again similar to the Twitch problem, LET THE USER DECIDE. Make the website easy to navigate and everyone will be able to find what they need. This also should be an easy solution as all they have to do is 
+to get rid of stuff and not necessarily implement more.
+
+D) Youtube: A better version of Twitch.
+https://www.youtube.com/
+Similar to Google, I don't have problems nor improvements for Youtube it looks great.
+
+E) NW Natural: Cluttered screen with a small font which makes it hard to read.
+https://www.nwnatural.com/
+NW Natural is actually very visually appealing compared to a lot of the websites I've used, the only improvement is to just increase the font size that's it.
+
+3- Personal Project Review:
+
+- Project 1:
+I liked the contrast of colors that I used for the website, but I hate that I had to increase the size of some of the pictures and they ended up looking low in quality, I also don't like the font option I picked.
+
+- Project 2:
+This project was an upgrade from the first but there isn't anything that I necessarily liked about it it was just better than the first one. I didn't like the cont side and that random table I had at the bottom
+I think I just added it to meet the requirement but didn't know how to fit it in properly.
+
+- Project 3:
+The font finally looks fine to me. However, I don't like the hyperlinks I should've put them in a box or something similar and also bolded them to make them look visually better, also I don't like how 
+close the site map is close to the bottom edge of the screen.
+
+- Project 4:
+I liked that both graphs worked. I don't like how basic both of them are.
+
+- Project 5:
+I have nothing to like about this project, every time I end up using anything with JS it never works as I wanted it to, the website is basic and the one JS functionality that I had didn't even work so yeah.
