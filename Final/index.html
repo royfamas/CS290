@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    <main>
+        <section id="tabs">
+            <button class="tablink" onclick="openTab(event, 'map')">Map</button>
+            <button class="tablink" onclick="openTab(event, 'destinations')">Destinations</button>
+            <button class="tablink" onclick="openTab(event, 'info')">Info</button>
+        </section>
+
+        <section id="map" class="tabcontent">
+            <div id="map-container"></div>
+        </section>
+        
+        <section id="destinations" class="tabcontent">
+            <h2>Destinations List</h2>
+            <ul id="destination-list">
+                <!-- Destination list will be populated dynamically -->
+            </ul>
+            <form id="destination-form">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                <label for="mode">Travel Mode:</label>
+                <select id="mode" name="mode">
+                    <option value="driving">Driving</option>
+                    <option value="walking">Walking</option>
+                    <option value="bicycling">Bicycling</option>
+                    <option value="transit">Transit</option>
+                </select>
+                <button type="submit" id="add-destination-button">Add Destination</button>
+            </form>
+            <p id="message"></p> <!-- Success/Error Message -->
+        </section>
+
+        <section id="info" class="tabcontent">
+            <h2>Travel Information</h2>
+            <table>
+                <tr>
+                    <th>Destination</th>
+                    <th>Distance</th>
+                </tr>
+                <tr>
+                    <td>New York City</td>
+                    <td>100 miles</td>
+                </tr>
+                <tr>
+                    <td>Los Angeles</td>
+                    <td>300 miles</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                    <td>400 miles</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Travel Planner</p>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIran1iupUhvv7CB5o81Ap7maCCSlS1Zw&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Event listener for adding destination
+        document.getElementById('destination-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            const destinationInput = document.getElementById('destination');
+            const modeSelect = document.getElementById('mode');
+            const messageElement = document.getElementById('message');
+
+            const destination = destinationInput.value;
+            const mode = modeSelect.value;
+
+            if (!destination) {
+                messageElement.textContent = 'Please enter a destination.';
+                return;
+            }
+
+            // Clear message
+            messageElement.textContent = '';
+
+            // Add destination
+            addDestination(destination, mode);
+            destinationInput.value = '';
+        });
+    </script>
+</body>
+</html>
